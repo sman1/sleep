@@ -29,12 +29,12 @@
     		// render the page -- in case you're wondering, 
     		// nothing will work without javascript!
     		var mrend = '';
-    		mrend = mrend + '<p class="margin">Enter your wakeup time: </p> <span class="waketime" style="display:none;"></span>&nbsp;<div class="row no-margin width">' + '<div class="col-lg-3 no-margin-right"><select id="hour" class="form-control">' + '<option>(часы)</option>';
+    		mrend = mrend + '<p class="margin">Enter your wakeup time: </p> <span class="waketime" style="display:none;"></span>&nbsp;<div class="row no-margin width">' + '<div class="col-lg-3 no-margin-right"><select id="hour" class="form-control">' + '<option>(hours)</option>';
     		// populate our lists
     		for (var h = 1; h <= 12; h++) {
     			mrend = mrend + '<option>' + h + '</option>';
     		}
-    		mrend = mrend + '</select></div><div class="col-lg-3 no-margin-right"><select id="minute" class="form-control"><option>(минуты)</option>';
+    		mrend = mrend + '</select></div><div class="col-lg-3 no-margin-right"><select id="minute" class="form-control"><option>(minutes)</option>';
     		for (var m = 0; m <= 55; m += 5) {
     			if (m < 10) {
     				mrend = mrend + '<option value="' + m + '">0' + m + '</option>';
