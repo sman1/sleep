@@ -16,14 +16,11 @@
 		<div class="row">
 			<div class="col-lg-5 col-offset-3">
 				<h1>Sleepytime 2.0</h1>
-				<h3 class="no-margin">pretty version of <a class="blue" href="http://sleepyti.me">sleepyti.me</a> by <a class="blue" href="http://oleg.so">d3head</a></h3>
 			</div>
 			<div class="col-lg-6 col-offset-3">
 				<div id="main"></div>
 				<div id="instant" style="display:none;"></div>
-			</div><!--<div class="col-lg-6 col-offset-3 footer"> 
-          Available on <a href="https://github.com/d3head/Sleepytime" class="blue">Github</a>. 
-        </div>-->
+			</div>
 		</div>
 	</div>
 		<script>		
@@ -32,7 +29,7 @@
     		// render the page -- in case you're wondering, 
     		// nothing will work without javascript!
     		var mrend = '';
-    		mrend = mrend + '<p class="margin">or lie down now </p> <span class="waketime" style="display:none;"></span>&nbsp;<div class="row no-margin width">' + '<div class="col-lg-3 no-margin-right"><select id="hour" class="form-control">' + '<option>(часы)</option>';
+    		mrend = mrend + '<p class="margin">Enter your wakeup time: </p> <span class="waketime" style="display:none;"></span>&nbsp;<div class="row no-margin width">' + '<div class="col-lg-3 no-margin-right"><select id="hour" class="form-control">' + '<option>(часы)</option>';
     		// populate our lists
     		for (var h = 1; h <= 12; h++) {
     			mrend = mrend + '<option>' + h + '</option>';
@@ -249,21 +246,21 @@
     				}
     			} else if (ctr == 4 || ctr == 5) {
     				if (min > 9) {
-    					r = r + ' или <font color="#00CC33">' + dhr + ':' + min + ap + '</font>';
+    					r = r + ' or <font color="#00CC33">' + dhr + ':' + min + ap + '</font>';
     				} else {
-    					r = r + ' или <font color="#00CC33">' + dhr + ':0' + min + ap;
+    					r = r + ' or <font color="#00CC33">' + dhr + ':0' + min + ap;
     				}
     			} else if (ctr == 3) {
     				if (min > 9) {
-    					r = r + ' или <font color="#99CC66">' + dhr + ':' + min + ap + '</font>';
+    					r = r + ' or <font color="#99CC66">' + dhr + ':' + min + ap + '</font>';
     				} else {
-    					r = r + ' или <font color="#99CC66">' + dhr + ':0' + min + ap + '</font>';
+    					r = r + ' or <font color="#99CC66">' + dhr + ':0' + min + ap + '</font>';
     				}
     			} else {
     				if (min > 9) {
-    					r = r + ' или ' + dhr + ':' + min + ap;
+    					r = r + ' or ' + dhr + ':' + min + ap;
     				} else {
-    					r = r + ' или ' + dhr + ':0' + min + ap;
+    					r = r + ' or ' + dhr + ':0' + min + ap;
     				}
     			}
     		}
